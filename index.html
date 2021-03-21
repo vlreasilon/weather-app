@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/43e1987ab6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <h1 id="city">
+                Tel Aviv
+            </h1>
+            <p style="color: #fff; font-size: 0.8em;" id="date">
+                Sunday - 14:45
+            </p>
+
+            <h1 class="temperature">
+                20°C
+            </h1>
+            <img src="icon.svg" alt="" width="250">
+            </br>
+            <form class="search-form" id="search-form" class="row g-3">
+                <div class="input-group">
+                    <input type="search" placeholder="Type a city.." autofocus="on" autocomplete="off" id="city-input"
+                        class="form-control shadow-sm" />
+                    <button class="btn btn-outline-secondary" type="button" id="change-city" value="Search"
+                        class="form-control btn btn-primary shadow-sm">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+
+                    </button>
+                </div>
+            </form>
+
+            <div class="row" id="forecast">
+                <div class="col-6" id="Day">
+                    <ul>
+                        <li class="forecastOne">
+                            Monday
+                        </li>
+                        <li>
+                            Tuesday
+                        </li>
+                        <li>
+                            Wednesday
+                        </li>
+                        <li>
+                            Thursday
+                        </li>
+                        <li>
+                            Friday
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-2" id="Icons">
+                    <ul>
+                        <li>
+                            <i class="fas fa-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-cloud-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-sun"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-cloud-showers-heavy"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-2" id="warmth">
+                    <ul>
+                        <li>
+                            19°C
+                        </li>
+                        <li>
+                            19°C
+                        </li>
+                        <li>
+                            19°C
+                        </li>
+                        <li>
+                            19°C
+                        </li>
+                        <li>
+                            19°C
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-2" id="cold">
+                    <ul>
+                        <li>
+                            10°C
+                        </li>
+                        <li>
+                            10°C
+                        </li>
+                        <li>
+                            10°C
+                        </li>
+                        <li>
+                            10°C
+                        </li>
+                        <li>
+                            10°C
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js">
+    </script>
+</body>
+
+</html>
